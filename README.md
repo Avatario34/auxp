@@ -8,4 +8,4 @@ It extends grblHAL's realtime report by adding the element `|Dout:<signals>`.
 
 `<signals>` is a string containing the numbers `0` to `7` if the corresponding digital Aux output port is active.
 
-Example: `|Aux:02` means, that the digital Aux output ports `0` and `2` are activated.
+Example: `|Dout:02` means, that the digital Aux output ports `0` and `2` are activated.
