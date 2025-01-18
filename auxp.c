@@ -25,11 +25,7 @@
 
 
 
-#ifdef ARDUINO
-#include "../driver.h"
-#else
 #include "driver.h"
-#endif
 
 
 
@@ -107,7 +103,7 @@ static void OnDigitalOut(uint8_t port, bool on) {
 
 
 // INIT FUNCTION - CALLED FROM plugins_init.h()
-void my_plugin_init() {
+void auxp_init() {
 
 	// Subscribe to driver reset event
 	driver_reset = hal.driver_reset;
